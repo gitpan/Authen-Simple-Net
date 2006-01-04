@@ -7,7 +7,7 @@ use base 'Authen::Simple::Adapter';
 use Net::POP3;
 use Params::Validate qw[];
 
-our $VERSION = 0.1;
+our $VERSION = 0.2;
 
 __PACKAGE__->options({
     host => {
@@ -93,7 +93,7 @@ __END__
 
 =head1 NAME
 
-Authen::Simple::FTP - Simple FTP authentication
+Authen::Simple::POP3 - Simple POP3 authentication
 
 =head1 SYNOPSIS
 
@@ -140,12 +140,12 @@ valid:
 
 Connection host, can be a hostname or IP number. Defaults to C<localhost>.
 
-    host => ftp.company.com
-    host => 10.0.0.1
+    host => 'ftp.company.com'
+    host => '10.0.0.1'
 
 =item * port
 
-Connection port, default to C<21>.
+Connection port, defaults to C<110>.
 
     port => 110
 

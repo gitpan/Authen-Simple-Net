@@ -4,7 +4,10 @@ use Module::Build;
 my $build = Module::Build->new(
     license            => 'perl',
     module_name        => 'Authen::Simple::Net',
-    dist_version       => 0.1,
+    dist_name          => 'Authen-Simple-Net',
+    dist_version       => 0.2,    
+    dist_author        => 'Christian Hansen <ch@ngmedia.com>',
+    dist_abstract      => 'libnet Authen::Simple adapters',
     requires           => {
         'Authen::Simple' => 0,
         'Net::FTP'       => 0,

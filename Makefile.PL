@@ -3,7 +3,7 @@ use ExtUtils::MakeMaker;
 WriteMakefile
 (
           'NAME' => 'Authen::Simple::Net',
-          'VERSION' => '0.1',
+          'VERSION' => '0.2',
           'PREREQ_PM' => {
                            'Authen::Simple' => '0',
                            'Net::FTP' => '0',

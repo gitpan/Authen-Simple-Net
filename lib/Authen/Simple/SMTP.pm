@@ -7,7 +7,7 @@ use base 'Authen::Simple::Adapter';
 use Net::SMTP;
 use Params::Validate qw[];
 
-our $VERSION = 0.1;
+our $VERSION = 0.2;
 
 __PACKAGE__->options({
     host => {
@@ -116,12 +116,12 @@ valid:
 
 Connection host, can be a hostname or IP number. Defaults to C<localhost>.
 
-    host => ftp.company.com
-    host => 10.0.0.1
+    host => 'ftp.company.com'
+    host => '10.0.0.1'
 
 =item * port
 
-Connection port, default to C<21>.
+Connection port, default to C<25>.
 
     port => 25
 
